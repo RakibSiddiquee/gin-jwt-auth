@@ -1,0 +1,7 @@
+GORM
+postgres from ElephantSQL
+GIN Framework
+Official bcrypt package
+jwt-go package
+godotenv package
+CompileDaemon pacakge
