@@ -1,9 +1,8 @@
 package main
 
 import (
-	"github.com/RakibSiddiquee/gin-jwt-auth/controllers"
 	"github.com/RakibSiddiquee/gin-jwt-auth/initializers"
-	"github.com/RakibSiddiquee/gin-jwt-auth/middleware"
+	"github.com/RakibSiddiquee/gin-jwt-auth/router"
 	"github.com/gin-gonic/gin"
 )
 
@@ -15,10 +14,7 @@ func init() {
 
 func main() {
 	r := gin.Default()
-
-	r.POST("/signup", controllers.Signup)
-	r.POST("/login", controllers.Login)
-	r.GET("/validate", middleware.RequireAuth, controllers.Validate)
+	router.GetRoutes(r)
 
 	r.Run()
 }
