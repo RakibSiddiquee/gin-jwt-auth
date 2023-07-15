@@ -1,0 +1,5 @@
+.idea
+note.txt
+go.sum
+gin-jwt-auth
+.env
